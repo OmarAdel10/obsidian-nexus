@@ -22,6 +22,15 @@ Performs a surgical, deep dive into a specific feature folder.
 
 ### 2. `nexus scout full`
 Performs a high-level overview of the entire project structure.
+- **Initialize Structure**: First, ensure the following directory structure exists in `${settings.vault_path}\${settings.project_name}\`:
+    - `Identity/`
+    - `Brain/`
+    - `Journal/`
+    - `Plans/`
+    - `Templates/`
+- **Create Templates**: Automatically generate the following files in `${settings.vault_path}\${settings.project_name}\Templates\`:
+    - `Session Log Template.md`: Should include sections for Objectives, Decisions Made, and Technical Changes.
+    - `Project Brain Template.md`: Should include sections for Project Overview, Tech Stack, and Roadmap.
 - **Structure Map**: Map the entire file tree and save it to `${settings.vault_path}\${settings.project_name}\Brain\Structure Map.md`.
 - **Package Audit**: Analyze the project's manifest (e.g., `pubspec.yaml`, `package.json`, `requirements.txt`) to explain the purpose of each dependency and save it to `${settings.vault_path}\${settings.project_name}\Brain\Package Audit.md`.
 - **Architecture Sync**: Generate/Update `${settings.vault_path}\${settings.project_name}\Brain\Architecture.md` with global routing, state management strategy, and project conventions.
