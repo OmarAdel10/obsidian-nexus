@@ -16,22 +16,32 @@ Obsidian Nexus turns your Obsidian vault into an "Infinite Memory" command cente
 ## 📁 Installation
 
 ```bash
-gemini extension install https://github.com/your-username/obsidian-nexus
+gemini extension install https://github.com/OmarAdel10/obsidian-nexus.git
 ```
 
 *Note: During installation, you will be prompted for your `vault_path` and `project_name`.*
 
 ## 📂 Vault Structure
 
-The extension organizes your vault under a `Gemini/` root:
+The extension organizes your vault under a `[ProjectName]/` root:
 
 ```
-VaultRoot/Gemini/
+VaultRoot/[ProjectName]/
 ├── Identity/ (Developer Profile)
 ├── Brain/ (Roadmap, Architecture, Features)
 ├── Journal/ (Daily Session Logs)
 └── Plans/ (Implementation Plans)
 ```
+
+## 🔄 Standard Workflow
+
+To get the most out of Obsidian Nexus, you MUST follow this sequence:
+
+1.  **Onboarding (`scout full`)**: Run this first on any new project. It maps the high-level architecture and dependencies into your vault.
+2.  **Indexing (`scout feature <path>`)**: After onboarding, run this for each major feature folder. This performs the deep, line-by-line documentation.
+3.  **Daily Maintenance (`nexus-sync`)**:
+    -   **Start of Session**: Run `Handshake` to load your identity and project state.
+    -   **End of Session**: Run `Summarize` to save your daily logs and update the brain.
 
 ## 📜 Skills & Commands
 

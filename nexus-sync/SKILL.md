@@ -5,27 +5,27 @@ description: Maintenance Tool. Syncs developer identity, project roadmap, archit
 
 # Nexus Sync Skill
 
-This skill implements the **Maintenance** part of the Obsidian Nexus workflow. It uses the configuration from the `obsidian-link` extension settings.
+This skill implements the **Maintenance** part of the Obsidian Nexus workflow. It uses the configuration from the extension settings.
 
 ## Workflow
 
 ### 1. Identity Handshake (Global)
 At the start of ANY session, Gemini MUST read your profile.
-- Read `${settings.vault_path}\Identity\Developer Profile.md`
+- Read `${settings.vault_path}\${settings.project_name}\Identity\Developer Profile.md`
 
 ### 2. Session Handshake (Project)
 Before starting work on a specific project, Gemini MUST read the roadmap, architecture, active plans, and latest logs.
-- **Roadmap**: Read `${settings.vault_path}\Brain\${settings.project_name} Brain.md`.
-- **Architecture**: Read `${settings.vault_path}\Brain\Architecture.md`.
-- **Active Plans**: Read `${settings.vault_path}\Plans\` to find any active implementation plans for this project.
-- **Recent History**: Read the last 5 entries in `${settings.vault_path}\Journal\`.
+- **Roadmap**: Read `${settings.vault_path}\${settings.project_name}\Brain\${settings.project_name} Brain.md`.
+- **Architecture**: Read `${settings.vault_path}\${settings.project_name}\Brain\Architecture.md`.
+- **Active Plans**: Read `${settings.vault_path}\${settings.project_name}\Plans\` to find any active implementation plans for this project.
+- **Recent History**: Read the last 5 entries in `${settings.vault_path}\${settings.project_name}\Journal\`.
 
 ### 3. Memory Persistence (Session End)
 When finishing a session, Gemini MUST summarize the work.
-- **Create Daily Note**: Use `write_file` to create a new file in `${settings.vault_path}\Journal\` named `DD-MM-YYYY [Session Name].md`.
-- **Apply Template**: Follow the structure in `${settings.vault_path}\Templates\Session Log Template.md`.
-- **Update Brain**: Update milestones or state in `${settings.vault_path}\Brain\${settings.project_name} Brain.md`.
-- **Update Plans**: Mark completed tasks in the active plan in `${settings.vault_path}\Plans\`.
+- **Create Daily Note**: Use `write_file` to create a new file in `${settings.vault_path}\${settings.project_name}\Journal\` named `DD-MM-YYYY [Session Name].md`.
+- **Apply Template**: Follow the structure in `${settings.vault_path}\${settings.project_name}\Templates\Session Log Template.md`.
+- **Update Brain**: Update milestones or state in `${settings.vault_path}\${settings.project_name}\Brain\${settings.project_name} Brain.md`.
+- **Update Plans**: Mark completed tasks in the active plan in `${settings.vault_path}\${settings.project_name}\Plans\`.
 
 ## Standard Handshake Procedure
 When triggered with "handshake":
