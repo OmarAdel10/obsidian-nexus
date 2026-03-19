@@ -14,7 +14,17 @@ Obsidian Nexus turns your Obsidian vault into an "Infinite Memory" command cente
 - **CLI Control**: Directly control your vault (search, read, create notes) via integrated Obsidian CLI tools.
 - **Persistent Plans**: Mandates that all implementation plans are saved to your vault for long-term persistence.
 
-## 📁 Installation
+## 🧠 How it Works (The Agentic Architecture)
+
+Obsidian-Nexus isn't just a simple wrapper; it's a structured pipeline that turns your Markdown files into a live, queryable database for your AI agent. 
+
+Here is a high-level overview of the system architecture, standard workflow, and how it organizes your project vault:
+
+<img width="2752" height="1536" alt="Obsidian Nexus Architecture Infographic" src="https://github.com/user-attachments/assets/d81533c0-bbe2-4b3d-9d72-5a8aacca3969" />
+
+*(Note: Obsidian-Nexus enforces strict separation of concerns within your vault to ensure your personal notes are never mixed with project data.)*
+
+## 🚀 Getting Started (Installation)
 
 ```bash
 gemini extension install https://github.com/OmarAdel10/obsidian-nexus.git
