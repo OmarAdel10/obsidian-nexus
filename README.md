@@ -57,9 +57,13 @@ To get the most out of Obsidian Nexus, you MUST follow this sequence:
 
 ## 📜 Skills & Commands
 
+The extension uses the Gemini CLI's **Auto-Discovery** feature. All expert knowledge is contained within the `skills/` directory and can be pulled into a session using the `activate_skill` tool.
+
 - **`nexus-sync`**: Handles daily `Handshake` (start) and `Summarize` (end).
 - **`nexus-scout`**: Performs `scout full` (initialization) or `scout feature` (deep dive).
-- **`shared-skills`**: Advanced support for **Markdown** (callouts), **Canvas** (visual maps), and **Bases** (database views).
+- **`obsidian-markdown`**: Expert guide for **Obsidian Flavored Markdown** (callouts, embeds, etc.).
+- **`obsidian-bases`**: Expert guide for **Obsidian Bases** (.base files) with views, filters, and formulas.
+- **`json-canvas`**: Expert guide for **JSON Canvas** (.canvas) visual mapping.
 
 ## 🛠️ Requirements
 

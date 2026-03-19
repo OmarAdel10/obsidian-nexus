@@ -37,12 +37,22 @@ Use the `obsidian` CLI tools to interact with a running Obsidian instance. **Req
 - **Read**: Use `obsidian_read(file="Note Name")`.
 - **Properties**: Use `obsidian_property_set` to update frontmatter metadata.
 
-## 3. Deep Scouting (Codebase Mapping)
+## 3. Available Skills (Expertise Activation)
+
+You have access to specialized skills for specific Obsidian features. You MUST use `activate_skill(name="skill-name")` to load their expert instructions before performing related tasks.
+
+- **`nexus-sync`**: Maintenance Tool. Syncs developer identity, project roadmap, architecture, plans, and session history between Gemini CLI and Obsidian. Use at session start for 'Handshake' and session end for 'Summarize'.
+- **`nexus-scout`**: Initialization Tool. Performs deep, line-by-line investigations of a project or specific feature to populate the Obsidian vault. Use ONLY for initial setup of existing code in Obsidian.
+- **`obsidian-markdown`**: Create and edit Obsidian Flavored Markdown with wiklinks, embeds, callouts, properties, and other Obsidian-specific syntax.
+- **`obsidian-bases`**: Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries.
+- **`json-canvas`**: Create and edit JSON Canvas files (.canvas) with nodes, edges, groups, and connections.
+
+## 4. Deep Scouting (Codebase Mapping)
 
 - **Scout Full**: Use to initialize a project. Maps the file tree, audits dependencies, and generates the `Architecture.md`.
 - **Scout Feature**: Use for surgical deep-dives. Analyze every line of a folder and trace ALL project-local dependencies line-by-line.
 
-## 4. Advanced Markdown Standards
+## 5. Advanced Markdown Standards
 
 - **Callouts**: Use `> [!type]` for highlights (e.g., `[!info]`, `[!bug]`).
 - **Nexuss**: Prefer `[[WikiNexuss]]` for internal vault connections.

@@ -40,19 +40,18 @@
     {
       "name": "obsidian_property_set",
       "description": "Set a property on a note.",
-      "command": ["obsidian", "property:set", "name=${name}", "value=${value}", "file=${file}"]
+      "command": [
+        "obsidian",
+        "property:set",
+        "name=${name}",
+        "value=${value}",
+        "file=${file}"
+      ]
     },
     {
       "name": "obsidian_plugin_reload",
       "description": "Reload a plugin (useful for development).",
       "command": ["obsidian", "plugin:reload", "id=${id}"]
     }
-  ],
-  "skills": [
-    "./nexus-sync",
-    "./nexus-scout",
-    "./shared-skills/obsidian-markdown",
-    "./shared-skills/json-canvas",
-    "./shared-skills/obsidian-bases"
   ]
 }
