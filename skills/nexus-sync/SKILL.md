@@ -39,6 +39,9 @@ When triggered with "handshake":
 5. `list_directory` Journal to find recent sessions.
 6. Output: "Handshake Complete. Identity, Brain, and Plans Synchronized for ${settings.project_name}."
 
+## Instructions
+- **Skill Integration**: When creating or updating ANY file in the vault during synchronization or summarization (e.g., Daily Notes, Brain updates, or Plan adjustments), you MUST activate and use the `obsidian-markdown`, `obsidian-bases`, and `json-canvas` skills to ensure high-quality, Obsidian-optimized content (e.g., using callouts, properties, database views, and visual canvases).
+
 ## Triggers
 - "Handshake"
 - "Sync with Obsidian"

@@ -39,6 +39,7 @@ Performs a high-level overview of the entire project structure.
 - Use `codebase_investigator` for the initial scan.
 - Always provide line-by-line detail for the feature logic in the final output.
 - Organize information using the feature-based sub-folder structure in the vault.
+- **Skill Integration**: When creating or updating ANY file in the vault during a scout (Full or Feature), you MUST activate and use the `obsidian-markdown`, `obsidian-bases`, and `json-canvas` skills to ensure high-quality, Obsidian-optimized content (e.g., using callouts, properties, database views, and visual canvases).
 
 ## Triggers
 - "Scout Feature"
